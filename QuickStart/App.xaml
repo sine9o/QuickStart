@@ -6,7 +6,12 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <tb:TaskbarIcon x:Key="Taskbar"
-                    ToolTipText="UIToy by Haoyun Qin">
+                        ToolTipText="UIToy by Haoyun Qin">
+            <tb:TaskbarIcon.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Name="Exit" Header="退出"/>
+                </ContextMenu>
+            </tb:TaskbarIcon.ContextMenu>
         </tb:TaskbarIcon>
     </Application.Resources>
 </Application>
